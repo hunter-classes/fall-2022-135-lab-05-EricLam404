@@ -3,3 +3,12 @@
 #include "funcs.h"
 
 // add your tests here
+TEST_CASE("Is divisible?"){
+    CHECK(isDivisibleBy(100, 25) == true);
+    CHECK(isDivisibleBy(35, 17) == false);
+}
+
+TEST_CASE("Is prime?"){
+    CHECK(isPrime(2) == true);
+    CHECK(isPrime(4) == false);
+}
