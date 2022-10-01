@@ -11,4 +11,10 @@ TEST_CASE("Is divisible?"){
 TEST_CASE("Is prime?"){
     CHECK(isPrime(2) == true);
     CHECK(isPrime(4) == false);
+    CHECK(isPrime(17) == true);
+}
+
+TEST_CASE("Next Prime"){
+    CHECK(nextPrime(14) == 17);
+    CHECK(nextPrime(17) == 19);
 }
