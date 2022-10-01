@@ -34,3 +34,9 @@ TEST_CASE("Next twin Primes"){
     CHECK(nextTwinPrime(5) == 7);
     CHECK(nextTwinPrime(17) == 19);
 }
+
+TEST_CASE("Largest twin Primes"){
+    CHECK(largestTwinPrime(5, 18) == 17);
+    CHECK(largestTwinPrime(1, 31) == 31);
+    CHECK(largestTwinPrime(14, 16) == -1);
+}
