@@ -20,3 +20,12 @@ int nextPrime(int n){
     }
     return i;
 }
+int countPrimes(int a, int b){
+    int count = 0;
+    for(int i = a; i <= b; i++){
+        if(isPrime(i)){
+            count++;
+        }
+    }
+    return count;
+}
