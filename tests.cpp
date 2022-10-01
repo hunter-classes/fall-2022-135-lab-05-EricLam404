@@ -23,3 +23,9 @@ TEST_CASE("Count Primes"){
     CHECK(countPrimes(4, 10) == 2);
     CHECK(countPrimes(17, 30) == 5);
 }
+
+TEST_CASE("Is twin Primes"){
+    CHECK(isTwinPrime(5) == true);
+    CHECK(isTwinPrime(17) == true);
+    CHECK(isTwinPrime(16) == false);
+}
