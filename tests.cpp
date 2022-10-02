@@ -10,6 +10,7 @@ TEST_CASE("Is divisible?"){
 
 TEST_CASE("Is prime?"){
     CHECK(isPrime(2) == true);
+    CHECK(isPrime(2) == true);
     CHECK(isPrime(4) == false);
     CHECK(isPrime(17) == true);
 }
@@ -21,7 +22,7 @@ TEST_CASE("Next Prime"){
 
 TEST_CASE("Count Primes"){
     CHECK(countPrimes(4, 10) == 2);
-    CHECK(countPrimes(17, 30) == 5);
+    CHECK(countPrimes(17, 30) == 4);
 }
 
 TEST_CASE("Is twin Primes"){

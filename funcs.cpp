@@ -7,10 +7,18 @@ bool isDivisibleBy(int n, int d){
 }
 
 bool isPrime(int n){
-    if( (n == 2) || (n == 3) || ((n + 1) % 6 == 0) || ((n - 1) % 6 == 0)){
+    if(n == 2){
         return true;
     }
-    return false;
+    if(n % 2 == 0){
+        return false;
+    }
+    for(int i = 3; i < n; i += 2){
+        if(n % i == 0){
+            return false;
+        }
+    }
+    return true;
 }
 
 int nextPrime(int n){
