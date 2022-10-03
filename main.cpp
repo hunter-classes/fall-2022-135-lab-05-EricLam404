@@ -8,7 +8,7 @@ int main()
   std::cout << std::boolalpha << isDivisibleBy(100, 25) << "\n";
   std::cout << "isDivisibleBy(35, 17)\n";
   std::cout << std::boolalpha << isDivisibleBy(35, 17) << "\n";
-
   std::cout << "\n--------------\n";
+
   return 0;
 }
