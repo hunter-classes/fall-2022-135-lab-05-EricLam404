@@ -9,17 +9,21 @@ TEST_CASE("Is divisible?"){
 }
 
 TEST_CASE("Is prime?"){
+    CHECK(isPrime(-1) == false);
+    CHECK(isPrime(1) == false);
     CHECK(isPrime(2) == true);
     CHECK(isPrime(4) == false);
     CHECK(isPrime(17) == true);
 }
 
 TEST_CASE("Next Prime"){
+    CHECK(nextPrime(-1) == 2);
     CHECK(nextPrime(14) == 17);
     CHECK(nextPrime(17) == 19);
 }
 
 TEST_CASE("Count Primes"){
+    CHECK(countPrimes(-1, 5) == 3);
     CHECK(countPrimes(4, 10) == 2);
     CHECK(countPrimes(17, 30) == 4);
     CHECK(countPrimes(1, 5) == 3);
@@ -40,5 +44,6 @@ TEST_CASE("Next twin Primes"){
 TEST_CASE("Largest twin Primes"){
     CHECK(largestTwinPrime(5, 18) == 17);
     CHECK(largestTwinPrime(1, 31) == 31);
+    CHECK(largestTwinPrime(-5, -1) == -1);
     CHECK(largestTwinPrime(14, 16) == -1);
 }
